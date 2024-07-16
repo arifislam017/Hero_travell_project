@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.mulish-font {
+        font-family: "Mulish", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+  *{box-sizing: border-box;}
+
+  body{
+    padding: 0;
+    margin: 0;
+  }
+/* Shared Style */
+
+.navbar_container{
+    width: 90%;
+    margin: 3rem auto;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.hero_tag{
+    color: rgb(255, 84, 0);
+
+}
+
+  /* Navber Style */
+  .logo{
+    display: flex;
+    align-items: center;
+    width: 280px;
+  }
+
+  .logo img{
+    width: 56px;
+    height: 48px;
+  }
+  .logo h1{
+    margin-left: 1rem;
+    font-size: 36px;
+    text-align: left;
+    font-size: 36px;
+    font-weight: 800;
+    line-height:45px ;
+    letter-spacing: 0;
+  }
+
+  .navbar {
+    position: relative;
+    width: 506px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .navbar a{
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 10px 0px 10px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0;
+    color: rgb(66, 66, 71);
+  }
+  /* Navber style End  */
+
+  
