@@ -72,4 +72,77 @@
   }
   /* Navber style End  */
 
-  
+  /* Main banner layout */
+  /* first_big_banner */
+section, .first_big_banner{
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(
+        180deg,
+        rgba(19,19,24,0.8) 0%, 
+        rgba(19,19,24,0) 100%),
+        url('../Images/group\ one.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 7rem 0;
+    background-position: center;
+}
+
+.explore_text{
+    color: white;
+    font-size: 4rem;
+    font-weight: 800px;
+    line-height: 80px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.text_description{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: rgb(237, 239, 241);
+    padding: 20px 0px;
+    margin:  auto;
+}
+.input_section{
+    margin-top: 2rem;
+    border-radius: 5px;
+    background-color:rgba(255, 255, 255, 0.2) ;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    backdrop-filter: blur(4px);
+}
+input, select{
+    width: 178px;
+    height: 50px;
+    padding: 0 0.5rem ;
+    border-radius: 8px;
+    border: none;
+    margin: 0 1rem;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400px;
+}
+.banner_btn{
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400px;
+    width: 178px;
+    height: 50px;
+    padding: 0 0.5rem ;
+    border-radius: 8px;
+    background-color: rgb(255, 84, 0);
+    border: none;
+    text-align: center;
+}
+/* Banner Style end  */
