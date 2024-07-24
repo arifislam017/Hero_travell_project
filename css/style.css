@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap'); */
 
-.mulish-font {
+/* .mulish-font {
         font-family: "Mulish", sans-serif;
         font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;
-      }
+      } */
 
   *{box-sizing: border-box;}
 
@@ -16,12 +16,12 @@
 /* Shared Style */
 
 .navbar_container{
-    width: 90%;
-    margin: 3rem auto;
+    width: 100%;
+    margin:  auto 0;
     border-radius: 1rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     
 }
 
@@ -34,7 +34,7 @@
   .logo{
     display: flex;
     align-items: center;
-    width: 280px;
+    width: 460px;
   }
 
   .logo img{
@@ -53,23 +53,33 @@
 
   .navbar {
     position: relative;
-    width: 506px;
+    width: 460px;
     height: 43px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: space-between;
+    border-radius: 12px;
   }
   .navbar a{
     text-align: center;
     text-decoration: none;
-    margin: 0px 10px 0px 10px;
+   
     font-size: 18px;
     font-weight: 400;
     line-height: 23px;
     letter-spacing: 0;
     color: rgb(66, 66, 71);
   }
+  .three_icon{
+    display: none;
+  }
+  .div_icon{
+    width: 35px;
+    height: 5px;
+    margin: 2px;
+    background-color: black;
+  }
+
   /* Navber style End  */
 
   /* Main banner layout */
@@ -151,14 +161,14 @@ input, select{
 /* section two image and text */
 .text_one_picture{
     position: relative;
-    margin-top: 60px;
     top: 100px;
     width: 85%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-   
+ 
 }
 
 .left_side_text{
@@ -169,8 +179,8 @@ input, select{
 }
 
 .right_side_image img{
-    width: 540px;
-    height: 550px;
+    width: 100%;
+    height: auto;
 }
 
 .popular_tours_text{
@@ -207,3 +217,490 @@ input, select{
   position: relative;
   top: 58px;
 }
+/* destination */
+.destination{
+  position: relative;
+  top: 100px;
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.destination img{
+  width: 100%;
+  height: 300px;
+  filter: brightness(80%);
+}
+.destination_info h2 p{
+  text-align: center;
+  width: 643px;
+  height: 126px;
+}
+.destination_info h2{
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 40px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgb(19, 19, 24);
+}
+.destination_info p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgb(19, 19, 24);
+}
+
+
+.img_gallery_one{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin: 5px;
+    position: relative;
+    
+}
+.img_gallery_two{
+  position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin: 5px;
+    
+}
+.img_gallery_three{
+  position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin: 5px;   
+}
+
+.img_gallery_one img{
+  margin-top: 40px;
+  width: 100%;
+}
+.img_gallery_two img{
+  width: 100%;
+}
+/* Why Choose Us */
+.choose_us{
+  position: relative;
+  top: 150px;
+  width: 85%;
+  margin: 100px auto;
+  text-align: center;
+}
+.choose_us_card{
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin-top: 50px;
+  
+}
+.card{
+  top: 30px;
+  width: 100%;
+  background-color: #FEFBF7;
+  border: 1px solid #f7ede0;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 5px;
+  height: 250px;
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 20px;
+  
+}
+
+.card_two{
+  top: 30px;
+  width: 100%;
+  background-color: aliceblue;
+  border: 1px solid rgb(213, 232, 248);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 5px;
+  height: 250px;
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 20px;
+  
+}
+.card_two_three{
+  top: 30px;
+  width: 50%;
+  background-color: #FDF6F6;
+  border: 1px solid #fce4e4;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px auto;
+  text-align: left;
+  height: 250px;
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 20px;
+}
+/* Deal and Discount */
+.deal_discount{
+  position: relative;
+  top: 150px;
+  width: 85%;
+  margin: 100px auto;
+  text-align: center;
+  
+}
+.bg_image{
+  margin-top: 50px;
+  background-image: url('../Images/Group\ 39.png');
+  width: 100%;
+  border-radius: 10px;
+  height:450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.details{
+  position: relative;
+  padding: 20px;
+  background-color:rgba(255, 255, 255, 0.8) ;
+  text-align: left;
+  width: 50%;
+  border-radius: 10px;
+  top: 60px;
+  left: 520px;
+}
+.details_image{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.div_one{
+  display: flex;
+  align-items: center;
+}
+
+.book_now{
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400px;
+  width: 168px;
+  height: 60px;
+  padding: 0 0.5rem ;
+  border-radius: 8px;
+  background-color: rgb(255, 84, 0);
+  color: white;
+  border: none;
+  text-align: center;
+}
+
+.bg_image_two{
+  margin-top: 50px;
+  background-image: url('../Images/Group\ 40.png');
+  width: 100%;
+  border-radius: 10px;
+  height:450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.details_two{
+  position: relative;
+  padding: 20px;
+  background-color:rgba(255, 255, 255, 0.8) ;
+  text-align: left;
+  width: 50%;
+  border-radius: 10px;
+  top: 60px;
+  left: 50px;
+}
+.all_package_btn{
+  margin-top: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400px;
+  width: 168px;
+  height: 60px;
+  padding: 0 0.5rem ;
+  border-radius: 8px;
+  background-color: rgb(255, 84, 0);
+  color: white;
+  border: none;
+  text-align: center;
+}
+/* A Simple Perfect Place To Get Lost */
+.simple_perfect{
+  top: 120px;
+  width: 85%;
+  height: 500px;
+  margin: 0 auto;
+  position: relative; 
+  display: flex;
+  justify-content: space-between;
+}
+.simple_text{
+  width: 42.5%;
+  line-height: 25px;
+}
+
+.simple_img img{
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* From and image */
+
+.from_container{
+  width: 85%;
+  margin: 0 auto;
+  position: relative; 
+  
+}
+
+.form{
+  width: 100%;
+  height: 100%;
+  margin: 40px 0px;
+  display: flex;
+  justify-content: space-between;
+  
+
+}
+
+.form_left{
+  width: 40%;
+  border: 1px solid orangered;
+  border-radius: 10px;
+  margin: 0px 10px 0px 0px ;
+  padding: 15px;
+}
+#input,
+#input_one{
+  width: 100%;
+  height: 40px;
+  border: 1px solid gray;
+  margin: 10px 0px  ;
+  padding: 3px;
+
+}
+
+
+.Subscribe_btn{
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400px;
+  border-radius: 8px;
+  background-color: rgb(255, 84, 0);
+  color: white;
+  border: none;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  margin: 10px 0px 
+}
+
+.from_right{
+  background-image: url('../Images/Rectangle\ 8\ \(1\).png');
+  width: 60%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  
+}
+.left_div{
+  background-color: orangered;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  width: 320px;
+  height: 100px;
+  border-radius: 10px;
+  line-height: 10px;
+  text-align: center;
+  padding: 10px;
+}
+/* footer */
+.footer{
+  margin-top: 50px;
+  background-color: #F3F3F4;
+  width: 100%;
+  height: 300px;
+}
+.simple_text{
+  width: 85%;
+  margin: 0 auto;
+}
+.footer_icon{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+}
+.footer_icon img{
+  margin: 10px;
+  width:5%;
+}
+
+.text_align{
+  margin-top: -5px;
+  text-align: center;
+}
+
+/* Media Querry */
+
+@media screen and (max-width:576px) {
+  .logo{
+    margin: 5px;
+  }
+  .navbar{
+    display: none;
+  }
+  .three_icon{
+    display: block;
+    margin: 5px;
+  }
+  /* Navbar done */
+  .first_big_banner{
+     display: flex;
+     flex-direction: column;
+     width: 85%;
+     height: 40%;
+  }
+  .text_description{
+    text-align: justify;
+    padding: 10px;
+  }
+  .input_section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #margine1,
+  #margine2,
+  #margine3,
+  .banner_btn{
+    margin: 10px;
+    width: 100%;
+  }
+  /* Banner Header Done */
+  .text_one_picture{
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    top: 10px;
+    width: 90%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .Read_more_btn{
+    position: relative;
+    top: 10px;
+  }
+
+  .right_side_image img{
+    width: 100%;
+    margin-top: 100px;
+    
+  }
+  /* section two image and text Done */
+    .img_gallery_one,
+    .img_gallery_two,
+    .img_gallery_three{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      
+    }
+    /* destination done */
+
+    .choose_us_card{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .card_two_three{
+      width: 100%;
+    }
+    /* choose_us done */
+    .bg_image,
+    .bg_image_two{
+      width: 100%;
+
+    }
+    .details,
+    .details_two{
+      position: relative;
+      left: 8px;
+      width: 95%;
+      height: 80%;
+      line-height: 15px;
+      
+    }
+
+    .details_image{
+      display: flex;
+      flex-direction:row;
+      justify-content: space-between;
+      width: 100%;
+     
+    }
+    .all_package_btn{
+      width: 48%;
+      position: absolute;
+      left: 30px;
+    }
+    /* Deal & Discount Done */
+    .simple_perfect{
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .simple_text{
+      margin-top: 50px;
+      list-style: 20px;
+    }
+    .responsive_line_hight{
+      line-height: 40px;
+    }
+    .simple_img{
+      margin-top: 20px;
+    }
+    .simple_img img{
+      width: 100%;
+      margin-top: 100px;
+    }
+    /* simple_perfect done */
+    .from_container{
+      margin-top: 400px;
+    }
+
+    .form{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+    }
+    .form_left,
+    .from_right{
+      margin-top: 10px;
+      width: 100%;
+    }
+    /* from_container done */
+    .footer_icon img{
+      width: 10%;
+    }
+}
+
